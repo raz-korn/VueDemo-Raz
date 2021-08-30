@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run VueDemo-businesspartners",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/businesspartners/index.html"
+      ],
+      "cwd": "${workspaceFolder}/businesspartners",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "dist",
+        "run.config": "{\"handlerId\":\"html5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/VueDemo/businesspartners\"}"
+      },
+      "envFile": "${workspaceFolder}/businesspartners/.env1",
+      "preLaunchTask": "Run VueDemo"
+    }
+  ]
+}
